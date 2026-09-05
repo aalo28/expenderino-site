@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expenderino — Simple Expense Tracking</title>
+<meta name="description" content="Expenderino is a private, on-device expense tracker: import your bank statements, budget by category, and see where your money goes.">
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --accent: #34c759; --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000; --card: #1c1c1e; --text: #f5f5f7; --muted: #98989d; --border: #2c2c2e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { text-align: center; padding: 40px 0 28px; }
+  .logo {
+    width: 76px; height: 76px; border-radius: 20px; margin: 0 auto 18px;
+    background: linear-gradient(135deg, #34c759, #248a3d);
+    display: flex; align-items: center; justify-content: center; font-size: 40px;
+  }
+  h1 { font-size: 40px; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .tagline { font-size: 20px; color: var(--muted); margin: 0; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; margin: 20px 0;
+  }
+  h2 { font-size: 22px; margin: 0 0 14px; }
+  ul.features { list-style: none; padding: 0; margin: 0; }
+  ul.features li { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 12px; }
+  ul.features li:last-child { border-bottom: 0; }
+  .emoji { font-size: 22px; line-height: 1.3; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding-top: 32px; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🪙</div>
+      <h1>Expenderino</h1>
+      <p class="tagline">See where your money actually goes.</p>
+    </header>
+
+    <div class="card">
+      <h2>What it does</h2>
+      <ul class="features">
+        <li><span class="emoji">📥</span><span><strong>Import any bank statement.</strong> camt.053/.052 XML, MT940, OFX/QFX, CSV and PDF — or scan a paper statement with on-device text recognition.</span></li>
+        <li><span class="emoji">🗂️</span><span><strong>Automatic categories.</strong> Transactions are sorted into categories you control, with budgets per category or tag.</span></li>
+        <li><span class="emoji">📊</span><span><strong>Clear insights.</strong> A dashboard, weekly/monthly statistics, and spending trends at a glance.</span></li>
+        <li><span class="emoji">🔒</span><span><strong>Private by design.</strong> Your data lives on your device and syncs through your own iCloud — not our servers. Optional Face ID lock.</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Support</h2>
+      <p>Questions, bugs, or feature ideas? Email <a href="mailto:you@example.com">you@example.com</a> and we'll get back to you.</p>
+    </div>
+
+    <footer>
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/support.html">Support</a>
+      <p>© 2026 Expenderino</p>
+    </footer>
+  </div>
+</body>
+</html>
